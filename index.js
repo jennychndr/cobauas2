@@ -18,7 +18,7 @@ app.use('/api/users', routes.user); //route untuk pakai mysql raw
  app.use('/api/transaksi', routes.transaksi); 
 
 const port=process.env.PORT||3000;
-app.listen(port, funtion(){
+app.listen(port, function(){
   console.log(`listening to port ${port}`);
 });
 
