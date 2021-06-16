@@ -18,6 +18,8 @@ app.use('/api/users', routes.user); //route untuk pakai mysql raw
  app.use('/api/transaksi', routes.transaksi); 
 
 const port=process.ev.PORT||3000;
-app.listen(3000, () => console.log('Running on port 3000'));
+app.listen(port, funtion(){
+  console.log(`listening to port ${port}`);
+});
 
 
